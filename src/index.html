@@ -3,32 +3,173 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
+    <title>Developpeur Full Stack Java - Honoré Guillaudeau</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
   </head>
 
   <body>
-    <!-- Barre -->
-    <header>
-      <nav class="menu">
-        <ul>
-          <li><a href="Accueil"> Accueil </a></li>
-        </ul>
+    <div id="menu">
+      <nav>
+        <a href="#section_1"> Accueil </a>
+        <a href="#section_2">Competences</a>
+        <a href="#section_3">Projets</a>
+        <a href="#section_4">A Propos</a>
+        <a>A propos</a>
       </nav>
-    </header>
+    </div>
 
-    <h1 class="test">Honore Guillaudeau</h1>
+    <!-- Ecran 1 -->
+    <div class="section1" id="section_1">
+      <div class="slideshow-container">
+        <!-- TXT  dans le carousel -->
 
-    <a href="mailto:smiirf123@gmail.com">Envoyer un courriel nulle part</a>
+        <div class="mySlides fade">
+          <img class="carousel" src="img/lunettePC.jpg" />
+          <div class="text">
+            <div class="content">
+              <h3>Honoré Guillaudeau</h3>
+              <p>Developpeur Web Java</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img class="carousel" src="img/ordiProg.jpg" />
+          <div class="text">
+            <div class="content">
+              <h3>Création de site web complet</h3>
+              <p>Spring boot, Java, Angular...</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img class="carousel" src="img/ScreenProg2jpg.jpg" />
+          <div class="text">
+            <div class="content">
+              <h3>Passioné d'informatique</h3>
+              <p>Siet Web, API, Frameworks, Developpement de jeux video</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+
+    <!-- Ecran 2 -->
+    <div class="section2" id="section_2">
+      <h2>Mes competences</h2>
+
+      <div class="cadreSection2">
+        <!-- Projet -->
+        <div class="projet">
+          <ul>
+            <li>
+              Analyser un cahier des charges et choisir une solution technique
+              adaptée parmi les solutions existantes.
+            </li>
+
+            <li>Concevoir la solution technique d'un client</li>
+            <li>Créer un site client</li>
+            <li>Développer, tester et valider les fonctionnalités du site</li>
+            <li>
+              Concevoir l’architecture technique d’une application à l’aide de
+              diagrammes UML.
+            </li>
+            <li>
+              Communiquer avec une base de données pour stocker et requêter des
+              informations.
+            </li>
+            <li>
+              Produire une documentation technique et fonctionnelle de
+              l’application.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Competences -->
+        <div class="competence">
+          <!-- Back -->
+          <div class="back">
+            <p>Spring boot</p>
+            <div class="container">
+              <div class="skills html">90%</div>
+            </div>
+
+            <p>Java</p>
+            <div class="container">
+              <div class="skills css">80%</div>
+            </div>
+
+            <p>C#</p>
+            <div class="container">
+              <div class="skills js">65%</div>
+            </div>
+
+            <p>SQL</p>
+            <div class="container">
+              <div class="skills php">60%</div>
+            </div>
+          </div>
+
+          <!-- Front -->
+          <div class="front">
+            <p>HTML</p>
+            <div class="container">
+              <div class="skills html">90%</div>
+            </div>
+
+            <p>CSS</p>
+            <div class="container">
+              <div class="skills css">80%</div>
+            </div>
+
+            <p>Javascript</p>
+            <div class="container">
+              <div class="skills php">60%</div>
+            </div>
+
+            <p>TypeScript</p>
+            <div class="container">
+              <div class="skills php">60%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ecran 3 -->
+    <div class="section3" id="section_3">
+      <h2>Mes projets</h2>
+      <div style="height: 500px" ;></div>
+    </div>
+
+    <!-- Ecran 4 -->
+    <div class="section4" id="section_4">
+      <h2>A Propos</h2>
+      <div style="height: 500px" ;></div>
+
+      <h2>Contact</h2>
+      <a href="mailto:smiirf123@gmail.com">Envoyer un courriel nulle part</a>
+    </div>
 
     <!-- <a> élément liens vers la section ci-dessous -->
-    <p><a href="#section_further_down"> Passez à la rubrique ci-dessous </a></p>
+    <p>
+      <a href="#section_further_down"> Passez à la rubrique ci-dessous </a>
+    </p>
 
     <div style="height: 3000px; width: 100%; background: red"></div>
     <!-- Rubrique à relier -->
     <h2 id="section_further_down">Section plus bas</h2>
     <div></div>
+
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
