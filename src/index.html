@@ -15,10 +15,8 @@
         <a href="#section_2">Competences</a>
         <a href="#section_3">Projets</a>
         <a href="#section_4">A Propos</a>
-        <a>A propos</a>
       </nav>
     </div>
-
     <!-- Ecran 1 -->
     <div class="section1" id="section_1">
       <div class="slideshow-container">
@@ -49,7 +47,9 @@
           <div class="text">
             <div class="content">
               <h3>Passioné d'informatique</h3>
-              <p>Siet Web, API, Frameworks, Developpement de jeux video</p>
+              <p>
+                Site Web, API, Frameworks, CI-CD, Developpement de jeux video
+              </p>
             </div>
           </div>
         </div>
@@ -65,7 +65,9 @@
 
     <!-- Ecran 2 -->
     <div class="section2" id="section_2">
-      <h2>Mes competences</h2>
+      <div class="cadreTitleSection2">
+        <div class="titleSection2">Compétences</div>
+      </div>
 
       <div class="cadreSection2">
         <!-- Projet -->
@@ -98,47 +100,75 @@
         <div class="competence">
           <!-- Back -->
           <div class="back">
-            <p>Spring boot</p>
-            <div class="container">
-              <div class="skills html">90%</div>
+            <div class="titleBack">Back-end</div>
+
+            <!-- Java -->
+            <div class="capsuleSkill">
+              <div class="titleSkill">Java</div>
+              <div class="cadreSkill">
+                <div class="skills expert">90%</div>
+              </div>
             </div>
 
-            <p>Java</p>
-            <div class="container">
-              <div class="skills css">80%</div>
+            <!-- Spring boot  -->
+            <div class="capsuleSkill">
+              <div class="titleSkill">Spring boot</div>
+              <div class="cadreSkill">
+                <div class="skills confirmé">80%</div>
+              </div>
             </div>
 
-            <p>C#</p>
-            <div class="container">
-              <div class="skills js">65%</div>
+            <!-- C#-->
+            <div class="capsuleSkill">
+              <div class="titleSkill">C#</div>
+              <div class="cadreSkill">
+                <div class="skills intermediaire">65%</div>
+              </div>
             </div>
 
-            <p>SQL</p>
-            <div class="container">
-              <div class="skills php">60%</div>
+            <!-- SQL -->
+            <div class="capsuleSkill">
+              <div class="titleSkill">SQL</div>
+              <div class="cadreSkill">
+                <div class="skills intermediaire">60%</div>
+              </div>
             </div>
           </div>
 
           <!-- Front -->
-          <div class="front">
-            <p>HTML</p>
-            <div class="container">
-              <div class="skills html">90%</div>
+          <div class="back">
+            <div class="titleBack">Front-end</div>
+
+            <!-- CSS -->
+            <div class="capsuleSkill">
+              <div class="titleSkill">CSS</div>
+              <div class="cadreSkill">
+                <div class="skills confirmé">80%</div>
+              </div>
             </div>
 
-            <p>CSS</p>
-            <div class="container">
-              <div class="skills css">80%</div>
+            <!-- HTML -->
+            <div class="capsuleSkill">
+              <div class="titleSkill">HTML</div>
+              <div class="cadreSkill">
+                <div class="skills intermediaire">70%</div>
+              </div>
             </div>
 
-            <p>Javascript</p>
-            <div class="container">
-              <div class="skills php">60%</div>
+            <!-- TypeScript-->
+            <div class="capsuleSkill">
+              <div class="titleSkill">TypeScript</div>
+              <div class="cadreSkill">
+                <div class="skills intermediaire">70%</div>
+              </div>
             </div>
 
-            <p>TypeScript</p>
-            <div class="container">
-              <div class="skills php">60%</div>
+            <!-- JavaScript-->
+            <div class="capsuleSkill">
+              <div class="titleSkill">Javascript</div>
+              <div class="cadreSkill">
+                <div class="skills debutant">50%</div>
+              </div>
             </div>
           </div>
         </div>
@@ -147,7 +177,79 @@
 
     <!-- Ecran 3 -->
     <div class="section3" id="section_3">
-      <h2>Mes projets</h2>
+      <div>
+        <h2>Mes projets</h2>
+      </div>
+      <!-- Carte Projet & Filter -->
+      <div>
+        <h2>Filter DIV Elements</h2>
+
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')">
+            Show all
+          </button>
+          <button class="btn" onclick="filterSelection('cars')">Cars</button>
+          <button class="btn" onclick="filterSelection('animals')">
+            Animals
+          </button>
+          <button class="btn" onclick="filterSelection('fruits')">
+            Fruits
+          </button>
+          <button class="btn" onclick="filterSelection('colors')">
+            Colors
+          </button>
+        </div>
+
+        <div class="container">
+          <div class="filterDiv cars">
+            <div class="containerCard">
+              <!--Lorsque l'on clique sur 
+              la carte une petite fenetre pop up 
+              et ouvre une description ainsi que des liens 
+              sur les projets github 
+       -->
+
+              <!-- title project -->
+              <div class="cadreTitleProject">
+                <div class="titleProject">Sperenza</div>
+              </div>
+
+              <!-- img project -->
+              <div class="cadreImgProject">
+                <img src="img/Spring.png" alt="SpringIcon" />
+              </div>
+
+              <!-- Info -->
+              <div class="cadreInfoProject">Info</div>
+            </div>
+          </div>
+
+          <div class="filterDiv colors fruits">CorseBook</div>
+
+          <div class="filterDiv cars">Volvo</div>
+
+          <div class="filterDiv colors">Red</div>
+
+          <div class="filterDiv cars animals">Mustang</div>
+
+          <div class="filterDiv colors">Blue</div>
+
+          <div class="filterDiv animals">Cat</div>
+
+          <div class="filterDiv animals">Dog</div>
+
+          <div class="filterDiv fruits">Melon</div>
+
+          <div class="filterDiv fruits animals">Kiwi</div>
+
+          <div class="filterDiv fruits">Banana</div>
+
+          <div class="filterDiv fruits">Lemon</div>
+
+          <div class="filterDiv animals">Cow</div>
+        </div>
+      </div>
+
       <div style="height: 500px" ;></div>
     </div>
 
@@ -159,16 +261,6 @@
       <h2>Contact</h2>
       <a href="mailto:smiirf123@gmail.com">Envoyer un courriel nulle part</a>
     </div>
-
-    <!-- <a> élément liens vers la section ci-dessous -->
-    <p>
-      <a href="#section_further_down"> Passez à la rubrique ci-dessous </a>
-    </p>
-
-    <div style="height: 3000px; width: 100%; background: red"></div>
-    <!-- Rubrique à relier -->
-    <h2 id="section_further_down">Section plus bas</h2>
-    <div></div>
 
     <script type="text/javascript" src="script.js"></script>
   </body>

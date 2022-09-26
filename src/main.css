@@ -3,6 +3,8 @@ body
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
+    background-color: rgba(202, 240, 248,0.2);
+
 }
 
 /*--------------- Menu -----------------*/
@@ -13,7 +15,7 @@ body
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(240, 177, 245, 0.8);
+    background-color: rgba(22, 62, 138, 0.6);
     transition: top 0.3s;
     top: 0px;
 
@@ -26,12 +28,34 @@ nav
     justify-content: space-evenly;
 
 }
+nav a 
+{
+  color: white;
+  border-right-style: inset;
+  border-left-style: inset;
+  border-width: 1px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+
+nav a:hover
+{
+  color: blue;
+  border-right-style: inset;
+  border-left-style: inset;
+  border-width: 1px;
+  border-color: blue;
+  padding: 10px;
+
+}
 
 nav a:active
 {
+
     color: red;
-    border: 0px 0px 2px 0px;
-    border-style: solid;
+    border-right-style: inset;
+    border-left-style: inset;
     border-color: red; 
 }
 
@@ -92,8 +116,11 @@ img { vertical-align: middle;}
 {
   padding: 10px 25px 10px 25px;
   width: auto;
-  background-color: rgba(245, 240, 154, 0.5);
+  min-width: 500px;
+  background-color: rgba(0, 119, 182, 0.4);
   border-style: inset;
+  color: antiquewhite;
+  border-radius: 15px;
 }
 
 
@@ -131,6 +158,35 @@ img { vertical-align: middle;}
 
   /*--------------- Section 1  -----------------*/
   /*--------------- Section 2  -----------------*/
+
+.section2
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 1000px;
+  justify-content: space-around;
+}
+
+.cadreTitleSection2
+{
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.titleSection2
+{
+  font-size: 33px;
+  text-decoration: underline;
+  text-decoration-color: orange;
+
+}
+
 .cadreSection2
 {
     display: flex;
@@ -150,9 +206,40 @@ img { vertical-align: middle;}
     width: 40%;
 }
 
-.container {
+.back
+{
+  margin: 20px;
+}
+
+
+.titleBack
+{
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 25px;
+  text-decoration: underline;
+  text-decoration-color: orange;
+}
+
+.capsuleSkill
+{
+
+ margin: 15px 0px 15px 0px;
+}
+.titleSkill
+{
+  
+  margin: 10px 0px 10px;
+  font-size: 20px;
+
+}
+
+.cadreSkill {
     width: 100%;
     background-color: #ddd;
+    border-radius: 10px;
 }
 
 .skills {
@@ -160,24 +247,103 @@ img { vertical-align: middle;}
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
+    border-radius: 10px;
 }
 
-.html {width: 90%; background-color: #04AA6D;}
-.css {width: 80%; background-color: #2196F3;}
-.js {width: 65%; background-color: #f44336;}
-.java {width: 60%; background-color: #808080;}
+.expert {width: 90%; background-color: #04AA6D;}
+.confirmé {width: 80%; background-color: #2196F3;}
+.intermediaire {width: 70%; background-color: #2196F3;}
+.debutant {width: 60%; background-color: #f44336;}
 
-.back
-{
 
-}
 
-.front
-{
-
-}
 
   /*--------------- Section 2  -----------------*/
+  /*--------------- Section 3  -----------------*/
 
 
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+  width: 300px;
+  height: 400px;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.containerCard
+{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.cadreTitleProject
+{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.titleProject
+{
+  border-bottom-style: outset;
+  border-right-style: outset;
+  border-left-style: outset;
+    border-bottom-width: 1px;
+    border-radius: 15px;
+  border-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+
+.cadreImgProject
+{
+  height: 200px;
+}
+.cadreImgProject img
+{
+  height: 180px;
+  width: 200px;
+}
+
+
+.cadreInfoProject
+{
+  text-align: center;
+}
 
