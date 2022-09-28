@@ -72,12 +72,34 @@
       <div class="cadreSection2">
         <!-- Projet -->
         <div class="projet">
-          <ul>
+          <ul class="cadreCompetence">
+            <li>Identifier et mener un projet à impact social</li>
+            <li>
+              Développer une application proposant les fonctionnalités attendues
+              par le client
+            </li>
             <li>
               Analyser un cahier des charges et choisir une solution technique
               adaptée parmi les solutions existantes.
             </li>
-
+            <li>
+              Apporter des améliorations de fonctionnalités demandées par le
+              client
+            </li>
+            <li>
+              Corriger des dysfonctionnements signalés par le client sur
+              l’application
+            </li>
+            <li>
+              Compléter une suite de tests unitaires et d’intégration afin de
+              prendre en compte les modifications apportées
+            </li>
+            <li>
+              Concevoir une application web avec une approche par composants
+            </li>
+            <li>
+              Créer une API web avec un web service SOAP ou un microservice REST
+            </li>
             <li>Concevoir la solution technique d'un client</li>
             <li>Créer un site client</li>
             <li>Développer, tester et valider les fonctionnalités du site</li>
@@ -85,6 +107,7 @@
               Concevoir l’architecture technique d’une application à l’aide de
               diagrammes UML.
             </li>
+            <li>Gérer l’évolutivité et l’adaptabilité d'un système</li>
             <li>
               Communiquer avec une base de données pour stocker et requêter des
               informations.
@@ -181,34 +204,32 @@
         <h2>Mes projets</h2>
       </div>
       <!-- Carte Projet & Filter -->
-      <div>
-        <h2>Filter DIV Elements</h2>
+      <div class="cadreSection3">
+        <!-- Filter-->
+        <div class="filterSection">
+          <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')">
+              All
+            </button>
 
-        <div id="myBtnContainer">
-          <button class="btn active" onclick="filterSelection('all')">
-            Show all
-          </button>
-          <button class="btn" onclick="filterSelection('cars')">Cars</button>
-          <button class="btn" onclick="filterSelection('animals')">
-            Animals
-          </button>
-          <button class="btn" onclick="filterSelection('fruits')">
-            Fruits
-          </button>
-          <button class="btn" onclick="filterSelection('colors')">
-            Colors
-          </button>
+            <button class="btn" onclick="filterSelection('fs')">
+              FullStack
+            </button>
+
+            <button class="btn" onclick="filterSelection('back')">
+              Back-end
+            </button>
+            <button class="btn" onclick="filterSelection('autre')">
+              Autre
+            </button>
+          </div>
         </div>
 
+        <!-- Container card -->
         <div class="container">
-          <div class="filterDiv cars">
+          <!-- Sperenza -->
+          <div class="filterDiv fs back">
             <div class="containerCard">
-              <!--Lorsque l'on clique sur 
-              la carte une petite fenetre pop up 
-              et ouvre une description ainsi que des liens 
-              sur les projets github 
-       -->
-
               <!-- title project -->
               <div class="cadreTitleProject">
                 <div class="titleProject">Sperenza</div>
@@ -220,37 +241,265 @@
               </div>
 
               <!-- Info -->
-              <div class="cadreInfoProject">Info</div>
+              <div class="cadreInfoProject">
+                <!-- Modal -->
+
+                <!-- Trigger/Open The Modal -->
+                <button class="btnModal" id="myBtn">
+                  <span>Info </span>
+                </button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Some text in the Modal..</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="filterDiv colors fruits">CorseBook</div>
+          <!-- CorseBook-->
+          <div class="filterDiv fs back">
+            <div class="containerCard">
+              <!-- title project -->
+              <div class="cadreTitleProject">
+                <div class="titleProject">CorseBook</div>
+              </div>
 
-          <div class="filterDiv cars">Volvo</div>
+              <!-- img project -->
+              <div class="cadreImgProject">
+                <img src="img/Spring.png" alt="SpringIcon" />
+              </div>
 
-          <div class="filterDiv colors">Red</div>
+              <!-- Info -->
+              <div class="cadreInfoProject">
+                <!-- Modal -->
 
-          <div class="filterDiv cars animals">Mustang</div>
+                <!-- Trigger/Open The Modal -->
+                <button class="btnModal" id="myBtn">
+                  <span>Info </span>
+                </button>
 
-          <div class="filterDiv colors">Blue</div>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Some text in the Modal..</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-          <div class="filterDiv animals">Cat</div>
+          <!-- Escalade -->
+          <div class="filterDiv back">
+            <div class="containerCard">
+              <!-- title project -->
+              <div class="cadreTitleProject">
+                <div class="titleProject">Site communautaire d'escalade</div>
+              </div>
 
-          <div class="filterDiv animals">Dog</div>
+              <!-- img project -->
+              <div class="cadreImgProject">
+                <img src="img/Spring.png" alt="SpringIcon" />
+              </div>
 
-          <div class="filterDiv fruits">Melon</div>
+              <!-- Info -->
+              <div class="cadreInfoProject">
+                <!-- Modal -->
 
-          <div class="filterDiv fruits animals">Kiwi</div>
+                <!-- Trigger/Open The Modal -->
+                <button class="btnModal" id="myBtn">
+                  <span>Info </span>
+                </button>
 
-          <div class="filterDiv fruits">Banana</div>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Some text in the Modal..</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-          <div class="filterDiv fruits">Lemon</div>
+          <!-- Bibliotheque -->
+          <div class="filterDiv back">
+            <div class="containerCard">
+              <!-- title project -->
+              <div class="cadreTitleProject">
+                <div class="titleProject">SI Bibliotheque</div>
+              </div>
 
-          <div class="filterDiv animals">Cow</div>
+              <!-- img project -->
+              <div class="cadreImgProject">
+                <img src="img/Spring.png" alt="SpringIcon" />
+              </div>
+
+              <!-- Info -->
+              <div class="cadreInfoProject">
+                <!-- Modal -->
+
+                <!-- Trigger/Open The Modal -->
+                <button class="btnModal" id="myBtn">
+                  <span>Info </span>
+                </button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Some text in the Modal..</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bibliotheque 2  -->
+          <div class="filterDiv back">
+            <div class="containerCard">
+              <!-- title project -->
+              <div class="cadreTitleProject">
+                <div class="titleProject">SI Bibliotheque 2</div>
+              </div>
+
+              <!-- img project -->
+              <div class="cadreImgProject">
+                <img src="img/Spring.png" alt="SpringIcon" />
+              </div>
+
+              <!-- Info -->
+              <div class="cadreInfoProject">
+                <!-- Modal -->
+
+                <!-- Trigger/Open The Modal -->
+                <button class="btnModal" id="myBtn">
+                  <span>Info </span>
+                </button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Some text in the Modal..</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Test Java -->
+          <div class="filterDiv back">
+            <div class="containerCard">
+              <!-- title project -->
+              <div class="cadreTitleProject">
+                <div class="titleProject">Testez un nouveau projet en java</div>
+              </div>
+
+              <!-- img project -->
+              <div class="cadreImgProject">
+                <img src="img/Spring.png" alt="SpringIcon" />
+              </div>
+
+              <!-- Info -->
+              <div class="cadreInfoProject">
+                <!-- Modal -->
+
+                <!-- Trigger/Open The Modal -->
+                <button class="btnModal" id="myBtn">
+                  <span>Info </span>
+                </button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Some text in the Modal..</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Labyrinth-->
+          <div class="filterDiv autre">
+            <div class="containerCard">
+              <!-- title project -->
+              <div class="cadreTitleProject">
+                <div class="titleProject">Labyrinth</div>
+              </div>
+
+              <!-- img project -->
+              <div class="cadreImgProject">
+                <img src="img/Spring.png" alt="SpringIcon" />
+              </div>
+
+              <!-- Info -->
+              <div class="cadreInfoProject">
+                <!-- Modal -->
+
+                <!-- Trigger/Open The Modal -->
+                <button class="btnModal" id="myBtn">
+                  <span>Info </span>
+                </button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Some text in the Modal..</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Survival Game -->
+          <div class="filterDiv autre">
+            <div class="containerCard">
+              <!-- title project -->
+              <div class="cadreTitleProject">
+                <div class="titleProject">Survival Game</div>
+              </div>
+
+              <!-- img project -->
+              <div class="cadreImgProject">
+                <img src="img/Spring.png" alt="SpringIcon" />
+              </div>
+
+              <!-- Info -->
+              <div class="cadreInfoProject">
+                <!-- Modal -->
+
+                <!-- Trigger/Open The Modal -->
+                <button class="btnModal" id="myBtn">
+                  <span>Info </span>
+                </button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Some text in the Modal..</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div style="height: 500px" ;></div>
     </div>
 
     <!-- Ecran 4 -->
