@@ -6,6 +6,11 @@
     <title>Developpeur Full Stack Java - Honoré Guillaudeau</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
   <body>
@@ -208,6 +213,9 @@
 
       <!-- Carte Projet & Filter -->
       <div class="cadreSection3">
+        <!-- La couleur des filter en fonction de leur etat 
+        doit etre revu -->
+
         <!-- Filter-->
         <div class="filterSection">
           <div id="myBtnContainer">
@@ -239,8 +247,8 @@
               </div>
 
               <!-- img project -->
-              <div class="cadreImgProject">
-                <img src="img/Spring.png" alt="SpringIcon" />
+              <div class="cadreImgProjectFS">
+                <img src="img/AngularSpring.png" alt="SpringIcon" />
               </div>
 
               <!-- Info -->
@@ -248,16 +256,63 @@
                 <!-- Modal -->
 
                 <!-- Trigger/Open The Modal -->
-                <button class="btnModal" id="myBtn">
+                <button id="1" class="btnModal" onclick="openModal(id)">
                   <span>Info </span>
                 </button>
 
                 <!-- The Modal -->
-                <div id="myModal" class="modal">
+                <div id="myModal1" class="modal">
                   <!-- Modal content -->
                   <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Some text in the Modal..</p>
+                    <span id="1" onclick="closeModal(id)" class="close"
+                      >&times;</span
+                    >
+                    <!-- Corps Modal -->
+                    <div class="cadreModal">
+                      <!-- Description -->
+                      <div class="descriptionModal">
+                        <div class="titleModal">Description</div>
+                        <div class="contentDescription">
+                          <p>
+                            Sperenza est un projet familiale, le site sera pour
+                            ma mère qui travaille dans la couture. Suite à une
+                            reconvertion ma mère travaille maintenant dans la
+                            couture, le site lui permet de gerer ses commandes
+                            ainsi que ses ressources avec ses fournisseurs. Coté
+                            client le site propose plusieurs gamme de produits
+                            selon tous les gouts. Le client peut passer des
+                            commandes, donner son avis, noter les articles..
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Technologie -->
+                      <div class="technoModal">
+                        <div class="titleModal">Technologie</div>
+
+                        <div class="technologies">
+                          <div>
+                            Front-end : Angular, HTML, CSS, TypeScript,
+                            Bootstrap
+                          </div>
+
+                          <div>
+                            Back-end : Spring boot, Spring Batch, JPA, OAuth2,
+                            JWT, MySQL, Mockito, Junit AWS3,
+                          </div>
+                          <div>Logiciel : Gitlab, Docker, Github, Postman</div>
+                        </div>
+                      </div>
+
+                      <!-- liens-->
+                      <div class="linkModal">
+                        <div class="titleModal">Link</div>
+                        <a
+                          href="https://gitlab.com/HonoR974/sperenza"
+                          class="fa fa-gitlab"
+                        ></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -273,8 +328,8 @@
               </div>
 
               <!-- img project -->
-              <div class="cadreImgProject">
-                <img src="img/Spring.png" alt="SpringIcon" />
+              <div class="cadreImgProjectFS">
+                <img src="img/AngularSpring.png" alt="SpringIcon" />
               </div>
 
               <!-- Info -->
@@ -282,16 +337,65 @@
                 <!-- Modal -->
 
                 <!-- Trigger/Open The Modal -->
-                <button class="btnModal" id="myBtn">
+                <button id="2" class="btnModal" onclick="openModal(id)">
                   <span>Info </span>
                 </button>
 
                 <!-- The Modal -->
-                <div id="myModal" class="modal">
+                <div id="myModal2" class="modal">
                   <!-- Modal content -->
                   <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Some text in the Modal..</p>
+                    <span id="2" onclick="closeModal(id)" class="close"
+                      >&times;</span
+                    >
+                    <!-- Corps Modal -->
+                    <div class="cadreModal">
+                      <!-- Description -->
+                      <div class="descriptionModal">
+                        <div class="titleModal">Description</div>
+                        <div class="contentDescription">
+                          <p>
+                            Le but de ce projet est de faire un site non
+                            lucratif qui sert la communauté. C'est pour cette
+                            rainson que j'ai décidé de reproduire Facebook mais
+                            pour la Corse, exclusivement. La Corse est une île
+                            composé principalement de petit village, avec des
+                            moyens de communications peu moderne. Les
+                            utilisateurs parleraient de ce qui s'y passe avec
+                            leurs propres mots. Que ce soit pour des activité
+                            inter-village, ou pour quelconque evenement le site
+                            permet ce-ci.
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Technologie -->
+                      <div class="technoModal">
+                        <div class="titleModal">Technologie</div>
+
+                        <div class="technologies">
+                          <div>
+                            Front-end : Angular, HTML, CSS, TypeScript,
+                            Bootstrap
+                          </div>
+
+                          <div>
+                            Back-end : Spring boot, JPA, JWT, MySQL, AWS3,
+                            Spring Batch
+                          </div>
+                          <div>Logiciel : Github, Postman</div>
+                        </div>
+                      </div>
+
+                      <!-- liens-->
+                      <div class="linkModal">
+                        <div class="titleModal">Link</div>
+                        <a
+                          href="https://github.com/HonoR974/CorseBook"
+                          class="fa fa-github"
+                        ></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -316,16 +420,51 @@
                 <!-- Modal -->
 
                 <!-- Trigger/Open The Modal -->
-                <button class="btnModal" id="myBtn">
+                <button id="3" onclick="openModal(id)" class="btnModal">
                   <span>Info </span>
                 </button>
 
                 <!-- The Modal -->
-                <div id="myModal" class="modal">
+                <div id="myModal3" class="modal">
                   <!-- Modal content -->
                   <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Some text in the Modal..</p>
+                    <span id="3" onclick="closeModal(id)" class="close"
+                      >&times;</span
+                    >
+                    <!-- Corps Modal -->
+                    <div class="cadreModal">
+                      <!-- Description -->
+                      <div class="descriptionModal">
+                        <div class="titleModal">Description</div>
+                        <div class="contentDescription">
+                          <p>
+                            Création d'un site communautaire autour de
+                            l'escalade.
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Technologie -->
+                      <div class="technoModal">
+                        <div class="titleModal">Technologie</div>
+
+                        <div class="technologies">
+                          <div>Front-end : Thymeleaf, HTML, CSS,</div>
+
+                          <div>Back-end : Spring boot, JPA , MySQL,</div>
+                          <div>Logiciel : Github</div>
+                        </div>
+                      </div>
+
+                      <!-- liens-->
+                      <div class="linkModal">
+                        <div class="titleModal">Link</div>
+                        <a
+                          href="https://github.com/HonoR974/P6"
+                          class="fa fa-github"
+                        ></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -350,16 +489,65 @@
                 <!-- Modal -->
 
                 <!-- Trigger/Open The Modal -->
-                <button class="btnModal" id="myBtn">
+                <button id="4" class="btnModal" onclick="openModal(id)">
                   <span>Info </span>
                 </button>
 
                 <!-- The Modal -->
-                <div id="myModal" class="modal">
+                <div id="myModal4" class="modal">
                   <!-- Modal content -->
                   <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Some text in the Modal..</p>
+                    <span id="4" onclick="closeModal(id)" class="close"
+                      >&times;</span
+                    >
+                    <!-- Corps Modal -->
+                    <div class="cadreModal">
+                      <!-- Description -->
+                      <div class="descriptionModal">
+                        <div class="titleModal">Description</div>
+                        <div class="contentDescription">
+                          <p>
+                            Le site web permettra aux usagers de suivre les
+                            prêts de leurs ouvrages. Il pourront : Rechercher
+                            des ouvrages et voir le nombre d’exemplaires
+                            disponibles. Consulter leurs prêts en cours. Les
+                            prêts sont pour une période de 4 semaines. Prolonger
+                            un prêt en cours. Le prêt d’un ouvrage n’est
+                            prolongeable qu’une seule fois. La prolongation
+                            ajoute une nouvelle période de prêt (4 semaines) à
+                            la période initiale.Pour les traitements automatisés
+                            (Batch), permettra d’envoyer des mails de relance
+                            aux usagers n’ayant pas rendu les livres en fin de
+                            période de prêt. L’envoi est automatique à la
+                            fréquence d’un par jour.
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Technologie -->
+                      <div class="technoModal">
+                        <div class="titleModal">Technologie</div>
+
+                        <div class="technologies">
+                          <div>Front-end : Thymeleaf, HTML, CSS,</div>
+
+                          <div>
+                            Back-end : Spring boot, Spring Batch, SendGrid, JPA
+                            , MySQL,
+                          </div>
+                          <div>Logiciel : Github</div>
+                        </div>
+                      </div>
+
+                      <!-- liens-->
+                      <div class="linkModal">
+                        <div class="titleModal">Link</div>
+                        <a
+                          href="https://github.com/HonoR974/P7"
+                          class="fa fa-github"
+                        ></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -384,16 +572,56 @@
                 <!-- Modal -->
 
                 <!-- Trigger/Open The Modal -->
-                <button class="btnModal" id="myBtn">
+                <button id="5" class="btnModal" onclick="openModal(id)">
                   <span>Info </span>
                 </button>
 
                 <!-- The Modal -->
-                <div id="myModal" class="modal">
+                <div id="myModal5" class="modal">
                   <!-- Modal content -->
                   <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Some text in the Modal..</p>
+                    <span id="5" onclick="closeModal(id)" class="close"
+                      >&times;</span
+                    >
+                    <!-- Corps Modal -->
+                    <div class="cadreModal">
+                      <!-- Description -->
+                      <div class="descriptionModal">
+                        <div class="titleModal">Description</div>
+                        <div class="contentDescription">
+                          <p>
+                            Suite au projet du système informatique d'une
+                            bibliothèque, des mise à jour on était demandé.
+                            Mettre en place une stratégie de tests, corrigez des
+                            bugs, ajouter un système de reservation des ouvrages
+                            de la bibliothèque.
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Technologie -->
+                      <div class="technoModal">
+                        <div class="titleModal">Technologie</div>
+
+                        <div class="technologies">
+                          <div>Front-end : Thymeleaf, HTML, CSS,</div>
+
+                          <div>
+                            Back-end : Spring boot, Spring batch, JPA , MySQL,
+                          </div>
+                          <div>Logiciel : Github</div>
+                        </div>
+                      </div>
+
+                      <!-- liens-->
+                      <div class="linkModal">
+                        <div class="titleModal">Link</div>
+                        <a
+                          href="https://github.com/HonoR974/P7"
+                          class="fa fa-github"
+                        ></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -418,16 +646,62 @@
                 <!-- Modal -->
 
                 <!-- Trigger/Open The Modal -->
-                <button class="btnModal" id="myBtn">
+                <button id="6" class="btnModal" onclick="openModal(id)">
                   <span>Info </span>
                 </button>
 
                 <!-- The Modal -->
-                <div id="myModal" class="modal">
+                <div id="myModal6" class="modal">
                   <!-- Modal content -->
                   <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Some text in the Modal..</p>
+                    <span id="6" onclick="closeModal(id)" class="close"
+                      >&times;</span
+                    >
+                    <!-- Corps Modal -->
+                    <div class="cadreModal">
+                      <!-- Description -->
+                      <div class="descriptionModal">
+                        <div class="titleModal">Description</div>
+                        <div class="contentDescription">
+                          <p>
+                            Mon équipe est en train de réaliser un système de
+                            facturation et de comptabilité pour un client. Le
+                            développement a débuté depuis quelques temps et je
+                            dois commencer à vérifier que l'application
+                            fonctionne correctement, qu'elle répond bien aux
+                            règles de gestion de la partie comptabilité et les
+                            respecte. A travers un projet inconnu je devais
+                            etablir des test unitaires et des tests
+                            d'intégration. Relevez les erreurs rencontrer
+                            faisait aussi partie du travail.
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Technologie -->
+                      <div class="technoModal">
+                        <div class="titleModal">Technologie</div>
+
+                        <div class="technologies">
+                          <div>Front-end : Thymeleaf, HTML, CSS,</div>
+
+                          <div>
+                            Back-end : Spring core, Spring JDBC , PostgresSQL,
+                            XML
+                          </div>
+                          <div>Logiciel : Gitlab, Docker</div>
+                        </div>
+                      </div>
+
+                      <!-- liens-->
+                      <div class="linkModal">
+                        <div class="titleModal">Link</div>
+                        <a
+                          href="https://github.com/HonoR974/P9"
+                          class="fa fa-github"
+                        ></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -444,7 +718,7 @@
 
               <!-- img project -->
               <div class="cadreImgProject">
-                <img src="img/Spring.png" alt="SpringIcon" />
+                <img src="img/unity.png" alt="SpringIcon" />
               </div>
 
               <!-- Info -->
@@ -452,16 +726,52 @@
                 <!-- Modal -->
 
                 <!-- Trigger/Open The Modal -->
-                <button class="btnModal" id="myBtn">
+                <button id="7" class="btnModal" onclick="openModal(id)">
                   <span>Info </span>
                 </button>
 
                 <!-- The Modal -->
-                <div id="myModal" class="modal">
+                <div id="myModal7" class="modal">
                   <!-- Modal content -->
                   <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Some text in the Modal..</p>
+                    <span id="7" onclick="closeModal(id)" class="close"
+                      >&times;</span
+                    >
+                    <!-- Corps Modal -->
+                    <div class="cadreModal">
+                      <!-- Description -->
+                      <div class="descriptionModal">
+                        <div class="titleModal">Description</div>
+                        <div class="contentDescription">
+                          <p>
+                            Création d'un jeux video perso, le principe est
+                            simple : trouver la sortie du labyrinth. Au fur et a
+                            mesure des niveau des contraintes sont ajoutés comme
+                            un compte à rebours, des obstacles,des ennemies et
+                            autre...
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Technologie -->
+                      <div class="technoModal">
+                        <div class="titleModal">Technologie</div>
+
+                        <div class="technologies">
+                          <div>Unity , C#</div>
+                          <div>Logiciel : Github</div>
+                        </div>
+                      </div>
+
+                      <!-- liens-->
+                      <div class="linkModal">
+                        <div class="titleModal">Link</div>
+                        <a
+                          href="https://github.com/HonoR974/P6"
+                          class="fa fa-github"
+                        ></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -478,7 +788,7 @@
 
               <!-- img project -->
               <div class="cadreImgProject">
-                <img src="img/Spring.png" alt="SpringIcon" />
+                <img src="img/unity.png" alt="SpringIcon" />
               </div>
 
               <!-- Info -->
@@ -486,16 +796,51 @@
                 <!-- Modal -->
 
                 <!-- Trigger/Open The Modal -->
-                <button class="btnModal" id="myBtn">
+                <button id="8" class="btnModal" onclick="openModal(id)">
                   <span>Info </span>
                 </button>
 
                 <!-- The Modal -->
-                <div id="myModal" class="modal">
+                <div id="myModal8" class="modal">
                   <!-- Modal content -->
                   <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Some text in the Modal..</p>
+                    <span id="8" onclick="closeModal(id)" class="close"
+                      >&times;</span
+                    >
+                    <!-- Corps Modal -->
+                    <div class="cadreModal">
+                      <!-- Description -->
+                      <div class="descriptionModal">
+                        <div class="titleModal">Description</div>
+                        <div class="contentDescription">
+                          <p>
+                            Création d'un jeux video perso de survis. Le jouer
+                            devra survivre en recoltant de la nouriture et des
+                            ressources pouvant servir à faire des armes et se
+                            defendres des ennemies.
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Technologie -->
+                      <div class="technoModal">
+                        <div class="titleModal">Technologie</div>
+
+                        <div class="technologies">
+                          <div>Unity , C#</div>
+                          <div>Logiciel : Github</div>
+                        </div>
+                      </div>
+
+                      <!-- liens-->
+                      <div class="linkModal">
+                        <div class="titleModal">Link</div>
+                        <a
+                          href="https://github.com/HonoR974/P6"
+                          class="fa fa-github"
+                        ></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

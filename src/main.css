@@ -365,10 +365,30 @@ img { vertical-align: middle;}
 .cadreImgProject
 {
   height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 .cadreImgProject img
 {
-  height: 180px;
+  height: 100px;
+  width: 100px;
+}
+
+
+.cadreImgProjectFS
+{
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cadreImgProjectFS img
+{
+  height: 100px;
   width: 200px;
 }
 
@@ -406,6 +426,7 @@ img { vertical-align: middle;}
   border: 1px solid #888;
   width: 80%;
   color: black;
+  border-radius: 15px;
 }
 
 /* The Close Button */
@@ -459,4 +480,47 @@ img { vertical-align: middle;}
 .btnModal:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+.cadreModal
+{
+
+}
+
+.descriptionModal
+{
+
+}
+
+.titleModal
+{
+  width: 100%;
+  height: 75px;
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration-color: black;
+
+}
+
+.contentDescription
+{
+
+}
+
+
+.technoModal
+{
+
+}
+
+.technologies
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.linkModal
+{
+
 }
