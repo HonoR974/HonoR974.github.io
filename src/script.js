@@ -102,7 +102,7 @@ for (var i = 0; i < btns.length; i++) {
 //-------------------- Modal 
 
 // Get the modal
-var modal = document.getElementsByName("myModal");
+var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
