@@ -3,7 +3,8 @@
 // from the top of the document
 //slide down the navbar
 window.onscroll = function() {scrollFunction()};
-window.onload = function() {scrollFunction()};
+window.onload = function() {scrollFunction(), read(1), read(2)};
+
 
 
 function scrollFunction() {
@@ -138,3 +139,37 @@ window.onclick = function(event) {
 }
 
 
+
+/**Read More Read Less Button  */
+
+function read(id) {
+
+  console.log("++++++++++++++debut read ");
+
+  var dots = document.getElementById("dots" + id);
+  var moreText = document.getElementById("more"+id);
+  var btnText = document.getElementById( id);
+
+  console.log( " id dots " +  id) + "\n dots " + dots;
+
+  if (dots.style.display.length < 1 )
+  {
+    dots.style.display = "none";
+  }
+
+
+
+  console.log(dots.style.display);
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+
+  console.log(dots.style.display);
+}
