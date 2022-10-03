@@ -80,46 +80,48 @@
         <!-- Projet -->
         <div class="projet">
           <ul class="cadreCompetence">
-            <li>Identifier et mener un projet à impact social</li>
-            <li>
+            <li class="lineCompetence">Identifier et mener un projet à impact social</li>
+            <li class="lineCompetence">
               Développer une application proposant les fonctionnalités attendues
               par le client
             </li>
-            <li>
+            <li class="lineCompetence">
               Analyser un cahier des charges et choisir une solution technique
               adaptée parmi les solutions existantes.
             </li>
-            <li>
+            <li class="lineCompetence">
               Apporter des améliorations de fonctionnalités demandées par le
               client
             </li>
-            <li>
+            <li class="lineCompetence">
               Corriger des dysfonctionnements signalés par le client sur
               l’application
             </li>
-            <li>
+            <li class="lineCompetence">
               Compléter une suite de tests unitaires et d’intégration afin de
               prendre en compte les modifications apportées
             </li>
-            <li>
+            <li class="lineCompetence">
               Concevoir une application web avec une approche par composants
             </li>
-            <li>
+            <li class="lineCompetence">
               Créer une API web avec un web service SOAP ou un microservice REST
-            </li>
-            <li>Concevoir la solution technique d'un client</li>
-            <li>Créer un site client</li>
-            <li>Développer, tester et valider les fonctionnalités du site</li>
-            <li>
+            </li >
+
+            <li class="lineCompetence">Concevoir la solution technique d'un client</li>
+           
+            <li class="lineCompetence" >Créer un site client</li>
+            <li class="lineCompetence">Développer, tester et valider les fonctionnalités du site</li>
+            <li class="lineCompetence">
               Concevoir l’architecture technique d’une application à l’aide de
               diagrammes UML.
             </li>
-            <li>Gérer l’évolutivité et l’adaptabilité d'un système</li>
-            <li>
+            <li class="lineCompetence" >Gérer l’évolutivité et l’adaptabilité d'un système</li>
+            <li class="lineCompetence" >
               Communiquer avec une base de données pour stocker et requêter des
               informations.
             </li>
-            <li>
+            <li class="lineCompetence">
               Produire une documentation technique et fonctionnelle de
               l’application.
             </li>
@@ -207,8 +209,8 @@
 
     <!-- Ecran 3 -->
     <div class="section3" id="section_3">
-      <div>
-        <h2>Mes projets</h2>
+      <div class="titleSection3">
+        Mes projets
       </div>
 
       <!-- Carte Projet & Filter -->
@@ -219,18 +221,18 @@
         <!-- Filter-->
         <div class="filterSection">
           <div id="myBtnContainer">
-            <button class="btn active" onclick="filterSelection('all')">
+            <button id="all" class="btn " onclick="filterSelection('all')">
               All
             </button>
 
-            <button class="btn" onclick="filterSelection('fs')">
+            <button id="fs" class="btn" onclick="filterSelection('fs')">
               FullStack
             </button>
 
-            <button class="btn" onclick="filterSelection('back')">
+            <button id="back" class="btn" onclick="filterSelection('back')">
               Back-end
             </button>
-            <button class="btn" onclick="filterSelection('autre')">
+            <button id="autre" class="btn" onclick="filterSelection('autre')">
               Autre
             </button>
           </div>
@@ -238,6 +240,9 @@
 
         <!-- Container card -->
         <div class="container">
+
+
+
           <!-- Sperenza -->
           <div class="filterDiv fs back">
             <div class="containerCard">
@@ -257,7 +262,8 @@
 
                 <!-- Trigger/Open The Modal -->
                 <button id="1" class="btnModal" onclick="openModal(id)">
-                  <span>Info </span>
+
+                  <span class="spanModal">Info</span>
                 </button>
 
                 <!-- The Modal -->
@@ -291,28 +297,35 @@
                         <div class="titleModal">Technologie</div>
 
                         <div class="technologies">
-                          <div>
+                          <div class="contentDescription">
                             Front-end : Angular, HTML, CSS, TypeScript,
                             Bootstrap
                           </div>
 
-                          <div>
+                          <div class="contentDescription">
                             Back-end : Spring boot, Spring Batch, JPA, OAuth2,
-                            JWT, MySQL, Mockito, Junit AWS3,
+                            JWT, MySQL, Mockito, Junit, AWS3,
                           </div>
-                          <div>Logiciel : Gitlab, Docker, Github, Postman</div>
+                          <div class="contentDescription" >Logiciel : Gitlab, Docker, Github, Postman</div>
                         </div>
+
                       </div>
 
                       <!-- liens-->
                       <div class="linkModal">
                         <div class="titleModal">Link</div>
-                        <a
-                          href="https://gitlab.com/HonoR974/sperenza"
-                          class="fa fa-gitlab"
-                        ></a>
+                        <div class="contourLink"> 
+                            <div > 
+                              <a  href="https://gitlab.com/HonoR974/sperenza"
+                              class="fa fa-gitlab link"></a>
+
+                            </div>
+                          </div>
+                       
                       </div>
+
                     </div>
+
                   </div>
                 </div>
               </div>
@@ -374,33 +387,39 @@
                         <div class="titleModal">Technologie</div>
 
                         <div class="technologies">
-                          <div>
+                          <div class="contentDescription">
                             Front-end : Angular, HTML, CSS, TypeScript,
                             Bootstrap
                           </div>
 
-                          <div>
+                          <div class="contentDescription">
                             Back-end : Spring boot, JPA, JWT, MySQL, AWS3,
                             Spring Batch
-                          </div>
-                          <div>Logiciel : Github, Postman</div>
+                          </div >
+                          <div class="contentDescription">Logiciel : Github, Postman</div>
                         </div>
-                      </div>
+                        </div>
 
                       <!-- liens-->
                       <div class="linkModal">
                         <div class="titleModal">Link</div>
-                        <a
+                        <div class="contourLink">
+                          <a
                           href="https://github.com/HonoR974/CorseBook"
-                          class="fa fa-github"
-                        ></a>
+                          class="fa fa-github link" ></a>
+                        </div>
+                       
                       </div>
-                    </div>
+
+                     </div>
+
+                     </div>
+
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+   
 
           <!-- Escalade -->
           <div class="filterDiv back">
@@ -449,20 +468,23 @@
                         <div class="titleModal">Technologie</div>
 
                         <div class="technologies">
-                          <div>Front-end : Thymeleaf, HTML, CSS,</div>
+                          <div class="contentDescription">Front-end : Thymeleaf, HTML, CSS,</div>
 
-                          <div>Back-end : Spring boot, JPA , MySQL,</div>
-                          <div>Logiciel : Github</div>
+                          <div class="contentDescription">Back-end : Spring boot, JPA , MySQL,</div>
+                          <div class="contentDescription">Logiciel : Github</div>
                         </div>
                       </div>
 
                       <!-- liens-->
                       <div class="linkModal">
                         <div class="titleModal">Link</div>
-                        <a
+                        <div class="contourLink">
+                          <a
                           href="https://github.com/HonoR974/P6"
                           class="fa fa-github"
                         ></a>
+                        </div>
+                      
                       </div>
                     </div>
                   </div>
@@ -529,23 +551,26 @@
                         <div class="titleModal">Technologie</div>
 
                         <div class="technologies">
-                          <div>Front-end : Thymeleaf, HTML, CSS,</div>
+                          <div class="contentDescription">Front-end : Thymeleaf, HTML, CSS,</div>
 
-                          <div>
+                          <div class="contentDescription">
                             Back-end : Spring boot, Spring Batch, SendGrid, JPA
                             , MySQL,
                           </div>
-                          <div>Logiciel : Github</div>
+                          <div class="contentDescription">Logiciel : Github</div>
                         </div>
                       </div>
 
                       <!-- liens-->
                       <div class="linkModal">
                         <div class="titleModal">Link</div>
-                        <a
+                        <div class="contourLink">
+                          <a
                           href="https://github.com/HonoR974/P7"
                           class="fa fa-github"
                         ></a>
+                        </div>
+                     
                       </div>
                     </div>
                   </div>
@@ -604,22 +629,24 @@
                         <div class="titleModal">Technologie</div>
 
                         <div class="technologies">
-                          <div>Front-end : Thymeleaf, HTML, CSS,</div>
+                          <div class="contentDescription">Front-end : Thymeleaf, HTML, CSS,</div>
 
-                          <div>
+                          <div class="contentDescription">
                             Back-end : Spring boot, Spring batch, JPA , MySQL,
                           </div>
-                          <div>Logiciel : Github</div>
+                          <div class="contentDescription">Logiciel : Github</div>
                         </div>
                       </div>
 
                       <!-- liens-->
                       <div class="linkModal">
                         <div class="titleModal">Link</div>
-                        <a
+                        <div class="contourLink"> 
+                            <a
                           href="https://github.com/HonoR974/P7"
-                          class="fa fa-github"
-                        ></a>
+                          class="fa fa-github link"
+                        ></a></div>
+                     
                       </div>
                     </div>
                   </div>
@@ -683,23 +710,26 @@
                         <div class="titleModal">Technologie</div>
 
                         <div class="technologies">
-                          <div>Front-end : Thymeleaf, HTML, CSS,</div>
+                          <div class="contentDescription"> Front-end : Thymeleaf, HTML, CSS,</div>
 
-                          <div>
+                          <div class="contentDescription">
                             Back-end : Spring core, Spring JDBC , PostgresSQL,
                             XML
                           </div>
-                          <div>Logiciel : Gitlab, Docker</div>
+                          <div class="contentDescription">Logiciel : Gitlab, Docker</div>
                         </div>
                       </div>
 
                       <!-- liens-->
                       <div class="linkModal">
                         <div class="titleModal">Link</div>
-                        <a
+                        <div class="contourLink">
+                          <a
                           href="https://github.com/HonoR974/P9"
-                          class="fa fa-github"
+                          class="fa fa-github link"
                         ></a>
+                        </div>
+                
                       </div>
                     </div>
                   </div>
@@ -758,18 +788,21 @@
                         <div class="titleModal">Technologie</div>
 
                         <div class="technologies">
-                          <div>Unity , C#</div>
-                          <div>Logiciel : Github</div>
+                          <div class="contentDescription">Unity , C#</div>
+                          <div class="contentDescription">Logiciel : Github</div>
                         </div>
                       </div>
 
                       <!-- liens-->
                       <div class="linkModal">
                         <div class="titleModal">Link</div>
-                        <a
+                        <div class="contourLink">
+                          <a
                           href="https://github.com/HonoR974/P6"
-                          class="fa fa-github"
+                          class="fa fa-github link"
                         ></a>
+                        </div>
+                       
                       </div>
                     </div>
                   </div>
@@ -827,18 +860,21 @@
                         <div class="titleModal">Technologie</div>
 
                         <div class="technologies">
-                          <div>Unity , C#</div>
-                          <div>Logiciel : Github</div>
+                          <div  class="contentDescription">Unity , C#</div>
+                          <div  class="contentDescription" >Logiciel : Github</div>
                         </div>
                       </div>
 
                       <!-- liens-->
                       <div class="linkModal">
                         <div class="titleModal">Link</div>
-                        <a
+                        <div class="contourLink">
+                          <a
                           href="https://github.com/HonoR974/P6"
                           class="fa fa-github"
                         ></a>
+                        </div>
+                        
                       </div>
                     </div>
                   </div>
@@ -846,8 +882,10 @@
               </div>
             </div>
           </div>
+          
+
         </div>
-      </div>
+
     </div>
 
     <!-- Ecran 4 -->
@@ -894,20 +932,20 @@
         </div>
 
         <div class="cadreSectionCode">
+
           <div class="sectionCode">
             <div class="titleSection">Back end</div>
 
             <p>
               Je me suis spécialisé dans le domaine du backend car je me sens à
               l'aise avec le language Java et le C# qui lui ressemble beaucoup
+            </p>
+            
               <span id="dots1">...</span>
 
               <span id="more1">
-                <strong
-                  >Qui dit Java en developpement web dit Spring boot !</strong
-                >
-              </p>
-              <p>
+               <p>
+                Qui dit Java en developpement web dit Spring boot !
                 J'aime particulierement Spring boot depuis que je suis passé de
                 Spring Core à Spring boot. Spring boot est un framework complet
                 qui permet de gerer une API avec des configurations minime,
@@ -961,10 +999,13 @@
       <div class="cadreTitleSection4">Contact</div>
 
       <div class="cadreContact">
-        <a href="mailto:smiirf123@gmail.com" class="fa  fa-google"></a>
-        <a href="#" class="fa fa-linkedin"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-github"></a>
+        <div class="contourContact">
+          <a href="mailto:smiirf123@gmail.com" class="fa  fa-google"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-github"></a>
+        </div>
+   
  
       </div>
     </div>
