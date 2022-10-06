@@ -544,6 +544,7 @@ img { vertical-align: middle;}
   border-width: 1px;
     border-style: dotted;
     border-radius: 15px;
+    padding: 0px 20px 0px 20px;
 }
 
 
